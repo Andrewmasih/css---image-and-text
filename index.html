@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Image and text</title>
+    <style>
+      .wrapper {
+        border: 1px solid #000;
+        width: 400px;
+      }
+
+      img {
+        float: left;
+      }
+      
+      p {clear: left;
+      	 
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- The image will be pushed to the right side of the its container that is its, wrapper -->
+      <img src="https://placebear.com/g/200/200" alt="dummyimage">
+      <!-- since the image is floated to the right, 
+      we would expect a paragraph to wrap the image
+      from the left side. But we cleared the right side
+      of the paragraph, so nothing can be placed on that
+      side, causing the paragraph to go to the new line-->
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem nostrum maxime consequuntur officia iure explicabo dolor voluptates reprehenderit, molestiae. Blanditiis expedita, praesentium ad quaerat, voluptatibus consequuntur numquam hic. Aliquid asperiores quae, dolores vitae illum eaque repudiandae doloribus quis repellendus sit reiciendis similique magnam, esse numquam voluptas facilis amet laborum quo, dignissimos odit, iure ab dolorum provident. Distinctio, facilis, quas tempore dolore sapiente delectus labore quam sed, iusto, quisquam assumenda nobis!</p>
+    </div>
+  </body>
+</html>
